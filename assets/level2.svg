@@ -1,0 +1,53 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#111f2a"/><stop offset=".55" stop-color="#29414a"/><stop offset="1" stop-color="#1a2928"/></linearGradient>
+ <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#314039"/><stop offset="1" stop-color="#141d1c"/></linearGradient>
+ <radialGradient id="moon"><stop stop-color="#f5e2ad"/><stop offset=".72" stop-color="#c9c89f"/><stop offset="1" stop-color="#91a5a0"/></radialGradient>
+ <linearGradient id="beam" x2="1" y2="1"><stop stop-color="#e4d29c" stop-opacity=".32"/><stop offset="1" stop-color="#e4d29c" stop-opacity="0"/></linearGradient>
+ <linearGradient id="coat" x2="0" y2="1"><stop stop-color="#efc264"/><stop offset="1" stop-color="#a95f2f"/></linearGradient>
+ <radialGradient id="fruit"><stop stop-color="#ffd982"/><stop offset=".35" stop-color="#cf8e42"/><stop offset="1" stop-color="#774234"/></radialGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#05090d" flood-opacity=".7"/></filter>
+ <filter id="glow"><feGaussianBlur stdDeviation="22"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values=".25 0 0 0 .2 .25 0 0 0 .2 .25 0 0 0 .2 0 0 0 .15 0"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="760" cy="186" r="102" fill="url(#moon)" opacity=".88"/><circle cx="760" cy="186" r="155" fill="#d6d4ad" opacity=".15" filter="url(#glow)"/>
+<!-- far hills and enormous trees -->
+<path d="M0 434q160-96 301-12t284-7q181-87 343 10t358-12q154-62 314 33v241H0z" fill="#17292a"/>
+<g fill="#142322" stroke="#65705b" stroke-opacity=".25" stroke-width="5">
+ <path d="M62 615V191q0-135 127-135t126 135v424z"/><path d="M324 608V141q0-141 147-141t147 141v467z"/>
+ <path d="M742 604V168q0-130 132-130t132 130v436z"/><path d="M1101 621V125q0-148 153-148t153 148v496z"/>
+</g>
+<g fill="#213a32" opacity=".9"><circle cx="114" cy="204" r="120"/><circle cx="252" cy="170" r="128"/><circle cx="402" cy="130" r="140"/><circle cx="550" cy="181" r="112"/><circle cx="795" cy="188" r="127"/><circle cx="922" cy="148" r="127"/><circle cx="1188" cy="136" r="143"/><circle cx="1360" cy="171" r="152"/></g>
+<!-- distant hanging orchard lanterns -->
+<path d="M173 0v248m413-248v280m391-280v238m416-238v258" stroke="#101a1b" stroke-width="7"/>
+<g fill="#e9c77b"><path d="M151 248q22-34 44 0l-6 42h-32z"/><path d="M564 280q22-34 44 0l-6 42h-32z"/><path d="M955 238q22-34 44 0l-6 42h-32z"/><path d="M1371 258q22-34 44 0l-6 42h-32z"/></g>
+<g fill="#f3d286" opacity=".55" filter="url(#glow)"><circle cx="173" cy="270" r="40"/><circle cx="586" cy="302" r="42"/><circle cx="977" cy="260" r="40"/><circle cx="1393" cy="280" r="44"/></g>
+<!-- path and ground -->
+<path d="M0 645q242-85 512-8t502-8q279-86 586 7v264H0z" fill="url(#floor)"/>
+<path d="M0 689q230-70 451-10t454-13q287-73 695 4" fill="none" stroke="#7d8062" stroke-opacity=".4" stroke-width="5"/>
+<g fill="#c6ad75" opacity=".48"><path d="M65 796l125-31 51 13-131 35z"/><path d="M238 756l95-21 34 12-98 25z"/><path d="M427 807l130-38 50 16-129 39z"/><path d="M650 763l104-28 46 15-117 33z"/></g>
+<!-- three dream orchards -->
+<g filter="url(#shadow)">
+ <path d="M260 665h170l-16 104H277z" fill="#553a2b" stroke="#a67b4f" stroke-width="7"/><path d="M275 655h140" stroke="#d8ae68" stroke-width="12"/>
+ <path d="M471 621h175l-16 151H487z" fill="#47352c" stroke="#98714c" stroke-width="7"/><path d="M484 611h150" stroke="#d1ae70" stroke-width="12"/>
+ <path d="M694 665h167l-15 103H711z" fill="#573d2e" stroke="#aa7a4c" stroke-width="7"/><path d="M708 655h140" stroke="#d8ae68" stroke-width="12"/>
+</g>
+<g fill="#2b5b45" stroke="#8eac75" stroke-width="5"><path d="M294 657q-30-90 15-120 19 44 13 86 24-116 63-113 5 65-40 130 46-80 77-56-12 65-66 82z"/><path d="M512 612q-34-103 13-137 22 50 14 99 26-124 67-117 5 69-42 139 50-84 83-58-12 68-71 88z"/><path d="M730 657q-31-89 14-120 20 45 14 87 24-116 62-112 6 64-39 129 45-79 76-55-11 65-66 82z"/></g>
+<g fill="url(#fruit)" stroke="#f3d68a" stroke-width="3"><circle cx="315" cy="622" r="18"/><circle cx="368" cy="626" r="15"/><circle cx="547" cy="577" r="21"/><circle cx="594" cy="593" r="16"/><circle cx="754" cy="621" r="18"/><circle cx="806" cy="631" r="15"/></g>
+<g fill="#fff1c4" opacity=".9"><circle cx="308" cy="615" r="4"/><circle cx="540" cy="570" r="5"/><circle cx="747" cy="614" r="4"/></g>
+<!-- wind ribbons pass behind the child -->
+<path d="M0 467q160-62 300 0t302 4m-602 33q130-45 246 0t267 4" fill="none" stroke="#a6c5bb" stroke-opacity=".19" stroke-width="10"/>
+<path d="M0 485L730 702H0z" fill="url(#beam)"/>
+<!-- child, small against the giant orchard -->
+<g filter="url(#shadow)">
+ <path d="M155 661q39-45 81 0l19 112H133z" fill="url(#coat)" stroke="#f2cf7b" stroke-width="4"/>
+ <path d="M155 656q2-65 41-73 49 10 49 74l-15 21h-59z" fill="#1c1d1c"/>
+ <path d="M162 638q33-30 71 1l-9 18h-54z" fill="#d99f4e"/>
+ <path d="M170 762h24v74h-26zm42 0h25v74h-25z" fill="#3b3029"/><path d="M165 830h32v20h-40zm43 0h33v20h-35z" fill="#151b1d"/>
+ <path d="M143 687q-26 29-29 67l18 7q16-28 31-52m87-22q23 22 30 57l-18 10q-20-27-34-48" fill="#b66d38" stroke="#eac275" stroke-width="5"/>
+</g>
+<!-- leaf silhouettes, motes and frame -->
+<g fill="#d5ca99"><circle cx="89" cy="311" r="3"/><circle cx="384" cy="388" r="2"/><circle cx="702" cy="324" r="3"/><circle cx="829" cy="454" r="2"/><circle cx="1012" cy="370" r="3"/><circle cx="920" cy="570" r="2"/><circle cx="652" cy="540" r="2"/></g>
+<rect width="1600" height="900" filter="url(#grain)" opacity=".08"/><rect width="1600" height="900" fill="none" stroke="#080d10" stroke-width="42" opacity=".48"/>
+</svg>
